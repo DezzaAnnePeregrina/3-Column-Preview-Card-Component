@@ -30,10 +30,8 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:2rem;
-    padding: 1rem;
-    padding-bottom: 6rem;
     min-height: 100vh;
+    padding-top: 2rem;
 }
 
 .card{
@@ -42,11 +40,16 @@ main{
     align-items: center;
     margin: .5rem;
     color: var(--clr-transparent-white);
+    border-radius: 2rem;
+}
+
+h1, h2{
+    color: var(--clr-very-light-gray);
 }
 
 .card__item{
-    width: 20rem;
-    padding: 3rem;
+    width: 19rem;
+    padding: 2rem 2rem 2rem 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -60,7 +63,7 @@ main{
 .card__title{
     font-family: var(--clr-ff2);
     font-weight: var(--clr-fw-strong);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .card__paragraph{
@@ -88,7 +91,7 @@ main{
 
 .one .card__link:hover {
     background-color: var(--clr-bright-orange);
-    border: 1px solid var(--clr-very-light-gray);
+    outline: 1px solid var(--clr-very-light-gray);
     color: var(--clr-transparent-white);
 }
 
@@ -110,7 +113,7 @@ main{
 
 .two .card__link:hover {
     background-color: var(--clr-very-dark-cyan);
-    border: 1px solid var(--clr-very-light-gray);
+    outline: 1px solid var(--clr-very-light-gray);
     color: var(--clr-transparent-white);
 }
 
@@ -132,7 +135,7 @@ main{
 
 .three .card__link:hover {
     background-color: var(--clr-very-dark-cyan);
-    border: 1px solid var(--clr-very-light-gray);
+    outline: 1px solid var(--clr-very-light-gray);
     color: var(--clr-transparent-white);
 }
 
@@ -146,6 +149,11 @@ footer{
 }
 
 @media (max-width: 380px){
+    main{
+    padding-top: 0;
+    padding-bottom: 6rem;
+    }
+
     .card{
     margin: 3.5rem;
     flex-direction: column;
